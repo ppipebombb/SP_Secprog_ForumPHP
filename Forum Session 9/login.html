@@ -13,6 +13,12 @@
   <h1>File Upload Form</h1>
 
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
+    <label for="role">Select Role:</label>
+    <select name="role" required>
+    <option value="A">Role A</option>
+    <option value="B">Role B</option>
+    </select><br><br>
+  
     <label for="Email">Email:</label>
     <input type="Email" id="Email" name="Email" required>
     <span class="Error"><?php echo $EmailError; ?></span><br><br>
